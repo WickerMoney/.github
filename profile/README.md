@@ -1,18 +1,14 @@
-<!-- Re-verify the "What works today" and "Not built yet" lists against the public wicker-money README before publishing. They were compiled from a local scan on 2026-09-25, not from the public repo. -->
-
-<!-- Enable when the real logo exists:
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="{{LOGO_DARK_URL}}">
-  <source media="(prefers-color-scheme: light)" srcset="{{LOGO_LIGHT_URL}}">
-  <img alt="Wicker Money" src="{{LOGO_LIGHT_URL}}" height="64">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/wickermoney-logo-primary-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/wickermoney-logo-primary-light.png">
+  <img alt="Wicker Money" src="assets/wickermoney-logo-primary-light.png" height="64">
 </picture>
--->
 
 # Wicker Money
 
-Self-hosted personal finance. Budgets, forecasts and imports are plugins.
+Self-hosted personal finance. Budgets and imports are plugins.
 
-**Try it:** [self-hosting guide](https://wickermoney.dev) | [source](https://github.com/wickermoney/wicker-money) | [wicker.money](https://wicker.money)
+**Try it:** [source](https://github.com/wickermoney/wicker-money) | [roadmap](https://github.com/wickermoney/wicker-money/blob/main/ROADMAP.md)
 
 Wicker Money is pre-1.0 and has a single maintainer.
 
@@ -39,8 +35,8 @@ The plugin API is not frozen, and there is no plugin isolation, so third-party p
 | --- | --- |
 | App, `plugin-sdk`, `ui-kit`, bundled plugins, templates | [wickermoney/wicker-money](https://github.com/wickermoney/wicker-money) |
 | Docs site | [wickermoney/wicker-money-dev](https://github.com/wickermoney/wicker-money-dev), published at [wickermoney.dev](https://wickermoney.dev) |
-| npm packages | `@wickermoney/plugin-sdk`, `@wickermoney/ui-kit` |
-| Container image | `ghcr.io/wickermoney/wicker-money` |
+| npm packages | `@wickermoney/plugin-sdk`, `@wickermoney/ui-kit` (published with `v0.1.0`) |
+| Container image | `ghcr.io/wickermoney/wicker-money` (published with `v0.1.0`) |
 
 ## Community
 

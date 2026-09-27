@@ -24,17 +24,32 @@ backported to older versions.
 ## What to expect
 
 This project has a single maintainer. Reports are handled on a best-effort
-basis, and I aim to acknowledge a report within {{ACK_TARGET}}. That is a target,
-not a commitment.
+basis, and I aim to acknowledge a report within 7 days. That is a target, not a
+commitment.
 
 ## Scope
 
 In scope:
 
-- The self-hosted app
-- The bundled plugins
-- The plugin SDK (`@wickermoney/plugin-sdk`)
+- The self-hosted app (`apps/api`, `apps/web`)
+- The bundled plugins (`plugins/*`)
+- The plugin SDK (`@wickermoney/plugin-sdk`) and UI kit (`@wickermoney/ui-kit`)
 - The container image (`ghcr.io/wickermoney/wicker-money`)
+
+Particularly interesting, because the design leans on them:
+
+- Anything that lets one user read or modify another user's rows (tenant
+  isolation is enforced with PostgreSQL row-level security).
+- A plugin reaching a table or endpoint its manifest never requested.
+- Authentication, session and refresh-token handling.
+
+Out of scope:
+
+- Deployments that run in production over plain HTTP with `COOKIE_SECURE=false`.
+  The app warns about this at startup; put it behind HTTPS instead.
+- Instances left with `REGISTRATION_ENABLED=true` on a network you do not
+  control. That setting is deliberate and documented.
+- Vulnerabilities in third-party plugins (see below).
 
 ## Things worth knowing
 
