@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://wickermoney.dev
+    about: Self-hosting guide and docs. Check here before opening an issue.
+  - name: Report a security vulnerability
+    url: https://github.com/wickermoney/.github/blob/main/SECURITY.md
+    about: Do not open a public issue. Use GitHub private vulnerability reporting on the affected repository, as described here.
+  - name: Email support
+    url: mailto:support@wicker.money
+    about: For private matters. Support is best-effort.
