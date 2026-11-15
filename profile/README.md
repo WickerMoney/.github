@@ -27,7 +27,7 @@ Wicker Money is pre-1.0 and has a single maintainer.
 - A plugin picker (UI to enable and disable plugins)
 - Third-party plugin install
 
-The plugin API is not frozen, and there is no plugin isolation, so third-party plugin code would run fully trusted.
+The plugin API is not frozen. Every bundled plugin's UI runs in a sandboxed frame, which has known gaps and has not been independently reviewed, so third-party plugin install is not supported yet. See [Security](https://github.com/wickermoney/.github/blob/main/SECURITY.md).
 
 ## Where things live
 
